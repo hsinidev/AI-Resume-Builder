@@ -1,0 +1,5 @@
+{
+  "name": "AI Resume Builder",
+  "description": "A modern, AI-enhanced application to generate a polished, multi-page, styled résumé/CV as a downloadable PDF file based on user-inputted professional data. Features a real-time preview and a stunning, immersive UI.",
+  "requestFramePermissions": []
+}

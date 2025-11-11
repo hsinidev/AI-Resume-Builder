@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume Builder - Create Your Professional CV</title>
+    <meta name="description" content="Create a stunning, professional resume in minutes with our AI-powered builder. Craft a pixel-perfect, ATS-friendly PDF resume with a real-time preview and a beautiful, user-friendly interface." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: '#FFD700',
+            },
+            keyframes: {
+              gradient: {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              }
+            },
+            animation: {
+              gradient: 'gradient 15s ease infinite',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- JSON-LD Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "url": "https://example.com/",
+          "name": "AI Resume Builder",
+          "description": "Generate a professional PDF resume with a stunning, immersive interface.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "HSINI MOHAMED",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://example.com/logo.png"
+            }
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "AI Resume Builder",
+          "url": "https://example.com/",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "All",
+          "description": "A modern, AI-enhanced application to generate a polished, multi-page, styled résumé/CV as a downloadable PDF file based on user-inputted professional data.",
+          "featureList": [
+            "Real-time Resume Preview",
+            "Multi-section Professional Data Input",
+            "Simulated PDF Generation",
+            "Responsive Design",
+            "Minimalist Professional Templates"
+          ],
+          "screenshot": "https://example.com/screenshot.jpg",
+          "creator": {
+            "@type": "Person",
+            "name": "HSINI MOHAMED",
+            "url": "https://github.com/hsinidev"
+          }
+        },
+        {
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://example.com/#guide"
+          },
+          "headline": "The Ultimate Guide to Modern Résumé Design for ATS and PDF Generation",
+          "description": "A comprehensive 3500-word guide on creating ATS-compliant resumes, leveraging PDF format, and mastering modern design principles to land your dream job.",
+          "image": "https://example.com/article-image.jpg",
+          "author": {
+            "@type": "Person",
+            "name": "HSINI MOHAMED"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "AI Resume Builder",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://example.com/logo.png"
+            }
+          },
+          "datePublished": "2023-10-27"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "Why is PDF the best format for a resume?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PDF is the best format because it preserves formatting across all devices and operating systems, ensuring recruiters see your resume exactly as you designed it. It's also universally accessible and preferred by most Applicant Tracking Systems (ATS)."
+            }
+          },{
+            "@type": "Question",
+            "name": "How do I make my resume ATS-friendly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To make your resume ATS-friendly, use a clean and simple layout, standard fonts, and clear section headings like 'Work Experience' and 'Education'. Avoid using tables, columns, images, and headers/footers, as these can confuse the parsing software. Ensure you include relevant keywords from the job description."
+            }
+          }]
+        }
+      ]
+    }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+  <!-- Add Babel to transpile JSX in the browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- Update script type to text/babel to enable transpilation with explicit presets -->
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+  </body>
+</html>
